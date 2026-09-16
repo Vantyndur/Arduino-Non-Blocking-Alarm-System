@@ -1,4 +1,4 @@
-**Bezpieczny System Reakcji na Zagrożenia** <br>
+# **Bezpieczny System Reakcji na Zagrożenia** <br>
 _Nieblokujący działania układu system reakcji na zagrożenie._ 
 
 **Stan alarmu jest w pełni nieblokujący.** <br>
@@ -15,7 +15,7 @@ Projekt został zrealizowany na symulatorze https://wokwi.com/
 
 Przetestuj projekt wchodząc w ten link -> https://wokwi.com/projects/475161499027179521.
 
-**1. Komponenty na schemacie**
+## **1. Komponenty na schemacie**
 
 - Dioda LED koloru czerwonego (symulująca sygnalizację świetlną alarmu) + rezystor 1kOhm <br>
   Podłączona pod pin nr 7 oraz GND. <br>
@@ -37,7 +37,7 @@ Przetestuj projekt wchodząc w ten link -> https://wokwi.com/projects/4751614990
   Podłączony pod pin nr 12 oraz GND. <br>
   Alias -> buzzerPin
 
-**2. Logika w kodzie**
+## **2. Logika w kodzie**
 
 - Odczytujemy wartość z potencjometru.
 - Jeśli wartość odczytana z potencjometru przekroczy zadaną wartość, system reaguje przechodząc w stan alarmu o którym informuje sygnalizacją świetlną (LED) oraz dźwiękową (buzzer), przez port szeregowy wysyłany jest komunikat o awarii "ERR_CODE_1: HIGH TEMP!" wraz z wartością odczytaną z czujnika przykładowo "Temperature sensor value: 1023".
@@ -45,7 +45,7 @@ Przetestuj projekt wchodząc w ten link -> https://wokwi.com/projects/4751614990
 - Odczytujemy wartość przycisku
 - Jeśli przycisk został naciśnięty, system reaguje przechodząc w stan alarmu o którym informuje sygnalizacją świetlną (LED) oraz dźwiękową (buzzer), przez port szeregowy wysyłany jest komunikat o awarii "ERR_CODE_2: EMERGENCY BUTON PUSHED!".
 
-**3. W skład repozytorium wchodzą:**
+## **3. W skład repozytorium wchodzą:**
 
 - sketch.ino - kod źródłowy programu
 - diagram.json - Plik Schematu z Wokwi
